@@ -1,6 +1,6 @@
 
 ![wireframe](public/stylesheets/images/shiatsuwireframe.png)
-
+![ERD](public/stylesheets/images/erdshiatsu.png)
 
 # Shiatsu App
 
