@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<!-- individual message -->
+ <!-- show function -->
+
+<%= message.title %> 
+<%= message.createdAt.toLocaleString() %> 
+<%= message.postedBy %> 
+<img src="<%= message.avatar%>" alt="">
+
+
+<!-- for each reply to message -->
+<% message.replies.forEach(reply=> { %>
+    <%= reply.message %>
+    <%= reply.postedBy %>  
+   <img src="<%= reply.avatar %> " alt=""> 
+    
+<% }); %> 
+
+
+<!-- form to reply -->
+
+<form action="/messages/<%=message._id%>" method="POST">
+<input type="text" name="message" placeholder="message...">
+<button type="submit">Reply</button>
+</form>
+
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+
+
+
+<h2>Message Board</h2>
+
+<!-- create post form -->
+<!-- index function -->
+<form action="/messages" method="POST">
+<input type="text" name="title" placeholder="message..">
+<button type="submit">Qi Post</button>
+</form>
+
+<!-- display each post -->
+<!-- create function -->
+
+<% messages.forEach(message =>{ %>
+<div>
+    <%= message.postedBy %>
+    <img src="<%= message.avatar %>" alt="">
+</div>
+
+<div>
+    <h3><%= message.title %></h3>
+    <h4><%= message.createdAt.toLocaleString()%></h4>
+    <a href="/messages/<%= message._id%>">See Post</a> 
+</div>
+
+<% }) %> 
+
+
+
+
+
+<%- include('../partials/footer') %>
