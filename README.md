@@ -25,6 +25,3 @@ This app is designed to educate and inform people about the eastern massage prac
 4. Add animation 
 
 ### Copyright 
-
-# shiatsu-unit-2-project
-# Shiatsu
