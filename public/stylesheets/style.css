@@ -1,20 +1,100 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: white;
-  margin: 0;
+  margin: 100px;
 }
 
 nav {
   background-color: white;
 }
 
-/* homepage index.ejs */
-
-.home-chart-container{
-  display: flex;
+a {
+  color: rgb(184, 179, 179);
 }
 
-.elements-homepage{
-height: 150px;
-width: 150px;
+.avatar {
+  margin: 50px 100px 0 20px;
+  border-radius: 50%;
+}
+
+.avatar-small {
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.x-button {
+  margin: 20px 0;
+}
+
+/* Message board index page */
+.Mbheading {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Mboard-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(161, 156, 156, 0.486);
+  
+}
+
+.message-button {
+  margin: 10px 0 20px;
+}
+
+.messages-container {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+  
+}
+
+/* details page*/
+.show-container {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.created-at {
+  font-size: 0.5rem;
+  color: rgb(148, 144, 144);
+}
+
+.Davatar {
+  margin: 10px 10px 10px;
+}
+
+.replyBox {
+  margin-bottom: 10px;
+}
+
+.reply-container {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* profile page */
+.profile-container{
+margin-top: 20px;
+border: 2px solid rgba(138, 135, 135, 0.459);
+border-radius: 10px;
+text-align: center;
+}
+
+.avatar-profile{
+  border-radius: 50%;
+  width: 70px;
 }

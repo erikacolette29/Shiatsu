@@ -1,29 +1,70 @@
 <%- include('../partials/header') %>
-
-<!-- individual message -->
- <!-- show function -->
-
-<%= message.title %> 
-<%= message.createdAt.toLocaleString() %> 
-<%= message.postedBy %> 
-<img src="<%= message.avatar%>" alt="">
-
-
-<!-- for each reply to message -->
-<% message.replies.forEach(reply=> { %>
-    <%= reply.message %>
-    <%= reply.postedBy %>  
-   <img src="<%= reply.avatar %> " alt=""> 
-    
-<% }); %> 
+<div class="show-container">
+  <!-- individual message -->
+  <!-- show function -->
+  <div class="card mb-3" style="max-width: 18rem;">
+    <div class="card-header"><img class="avatar Davatar" src="<%= message.avatar%>" alt="" /><%= message.postedBy %></div>
+    <div class="card-body text-dark">
+      <h5 class="card-title"><%= message.title %></h5>
+      <p class="card-text created-at"><%= message.createdAt.toLocaleString() %></p>
+    </div>
+  </div>
+  </div>
+  </div>
 
 
-<!-- form to reply -->
+  <!-- form to reply -->
+<div class="Mboard-container ">
+  <form action="/messages/<%= message._id%>" method="POST">
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="text"
+        name="message"
+        placeholder="message..."
+      />
+    </div>
+    <button class="x-button btn btn-light" type="submit">Reply</button>
+  </form>
+</div>
 
-<form action="/messages/<%=message._id%>" method="POST">
-<input type="text" name="message" placeholder="message...">
-<button type="submit">Reply</button>
-</form>
+  <!-- for each reply to message -->
+
+  <% message.replies.forEach(reply=> { %>
+<div class="reply-container">
+  <div class=" replyBox card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img
+          class="avatar-small"
+          width="30"
+          src="<%= reply.avatar %> "
+          alt=""
+        /><%= reply.postedBy %>
+      </h5>
+      <p class="card-text"><%= reply.message %>.</p>
+      <h6 class="card-subtitle mb-2 text-muted created-at">
+        <%= message.createdAt.toLocaleString() %>
+      </h6>
+    </div>
+  </div>
+</div>
+  <% }); %>
+
+  <!-- to delete -->
+
+  <!-- <% message.replies.forEach(reply => { %>
+    <% if(user.name === reply.postedBy){ %>
+        <form action="/messages/<%= message._id%>?_method=DELETE" method="POST">
+        <button class="btn btn-light" type='submit'>x</button>
+        </form>
+        <% } %>
+        <% }) %>  -->
 
 
-<%- include('../partials/footer') %>
+
+        
+</div>
+
+  <%- include('../partials/footer') %>
+

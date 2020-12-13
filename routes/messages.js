@@ -5,10 +5,14 @@ const messCtrl = require("../controllers/messages")
 router.get("/", isLoggedIn, messCtrl.index)
 router.post("/", isLoggedIn, messCtrl.create)
 
-
 //message show page by individual id
 router.get("/:id", isLoggedIn, messCtrl.show)
 router.post("/:id", isLoggedIn, messCtrl.reply)
+
+//delete message
+router.delete("/:id", isLoggedIn, messCtrl.deleteMessage)
+//delete reply
+router.delete("/:id", isLoggedIn, messCtrl.deleteReply)
 
 
 

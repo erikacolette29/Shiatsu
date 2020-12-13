@@ -1,35 +1,53 @@
 <%- include('../partials/header') %>
 
-
-
-<h2>Message Board</h2>
+<h2 class="Mbheading">Message Board</h2>
 
 <!-- create post form -->
 <!-- index function -->
-<form action="/messages" method="POST">
-<input type="text" name="title" placeholder="message..">
-<button type="submit">Qi Post</button>
-</form>
+<div class="Mboard-container">
+  <form action="/messages" method="POST">
+    <label for="exampleFormControlInput1" class="form-label"
+      >Post a Message:</label
+    >
+    <textarea
+      class="form-control"
+      name="title"
+      id="exampleFormControlTextarea1"
+      rows="3"
+      placeholder="Message.."
+    ></textarea>
+    <button class="message-button btn btn-light" type="submit">Qi Post</button>
+  </form>
+</div>
 
 <!-- display each post -->
 <!-- create function -->
 
 <% messages.forEach(message =>{ %>
-<div>
-    <%= message.postedBy %>
-    <img src="<%= message.avatar %>" alt="">
+<div class="messages-container">
+<div class="card mb-3" style="max-width: 540px">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img class="avatar" src="<%= message.avatar %>" alt="" />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= message.postedBy %></h5>
+        <p><%= message.title %></p>
+        <p class="card-text">
+          <small class="text-muted created-at"
+            ><%= message.createdAt.toLocaleString()%></small>
+        </p>
+      </div>
+      <a href="/messages/<%= message._id %>" class="btn btn-light">See Post</a>
+      <% if(user.name === message.postedBy){ %>
+      <form action="/messages/<%= message._id%>?_method=DELETE" method="POST">
+        <button class="x-button btn btn-light" type="submit">x</button>
+      </form>
+      <% } %>
+    </div>
+  </div>
+</div>
 </div>
 
-<div>
-    <h3><%= message.title %></h3>
-    <h4><%= message.createdAt.toLocaleString()%></h4>
-    <a href="/messages/<%= message._id%>">See Post</a> 
-</div>
-
-<% }) %> 
-
-
-
-
-
-<%- include('../partials/footer') %>
+<% }) %> <%- include('../partials/footer') %>

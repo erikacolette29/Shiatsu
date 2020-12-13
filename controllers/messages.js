@@ -6,7 +6,9 @@ module.exports = {
     index,
     create,
     show,
-    reply
+    reply,
+    deleteMessage,
+    deleteReply
 }
 
 
@@ -55,3 +57,28 @@ function create(req,res){
      })
      })
  }
+
+
+ function deleteMessage(req,res){
+    Message.findByIdAndDelete(req.params.id)
+    .then(() =>{
+        res.redirect(`/messages`)
+    })
+    }
+    
+    // let idx = req.user.messages.indexOf(req.params.id)
+    // req.user.messages.splice(idx, 1)
+    // req.user.save()
+    // .then((() =>{
+    //     res.redirect(`/messages/${req.params.id}`)
+    // }))
+    
+    
+    
+    
+     function deleteReply(req,res){
+        Message.replies.findByIdAndDelete(req.params.id)
+        .then(()=>{
+            res.redirect(`/messages/${message._id}`)
+        })
+     }

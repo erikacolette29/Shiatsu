@@ -13,17 +13,24 @@
   <body>
 
     <nav>
-      <ul>
+      <ul class="nav flex-column">
         <% if (user) { %>
-        <li>
-          <a href="/auth/logout">Log Out</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/users">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/messages">Message Board</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/logout">Log Out</a>
         </li>
-        <li>
-          <a href="/messages">Message Board</a>
-        </li>
+        
         <% } else { %>
-        <li>
-          <a href="/auth/google">Login with Google</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="/auth/google">Login with Google</a>
         </li>
        
         <% } %>
