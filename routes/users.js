@@ -4,7 +4,7 @@ const userCtrl = require('../controllers/users')
 
 
 router.get("/", isLoggedIn, userCtrl.index)
-
+router.get("/treatment", isLoggedIn, userCtrl.showtreatment)
 
 
 
