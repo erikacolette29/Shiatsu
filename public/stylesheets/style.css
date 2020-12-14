@@ -28,8 +28,10 @@ a {
 
 /* Message board index page */
 .Mbheading {
-  margin-top: 20px;
+  
   text-align: center;
+  border: 2px solid black;
+  padding: 30px;
 }
 
 .Mboard-container {
