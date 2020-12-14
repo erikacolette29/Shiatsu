@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: white;
-  margin: 100px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 100px;
 }
 
 nav {
@@ -96,42 +96,24 @@ a {
 
 /* treatment page */
 .treatment-head {
-  background-color: black;
-  border-radius: 10px;
+  border: 2px solid black;
   padding: 20px;
   text-align: center;
-  color: #fff;
+ 
 }
 
-.element {
+.diagram{
   display: flex;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+ justify-content: center;
+ align-content: center;
 }
 
-.fire-element {
-  background-color: red;
-  justify-content: center;
-  align-items: center;
+.diagram-size{
+  width: 400px;
+  margin: 50px;
+  
 }
-.earth-element {
-  background-color: yellow;
-  justify-content: center;
-  align-items: center;
-}
-.metal-element {
-  background-color: rgba(230, 220, 220, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-.water-element {
-  background-color: rgb(42, 42, 184);
-  justify-content: center;
-  align-items: center;
-}
-.wood-element {
-  background-color: rgb(95, 192, 95);
-  justify-content: center;
-  align-items: center;
+
+.treat-text{
+  text-align: center;
 }
