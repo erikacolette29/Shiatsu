@@ -7,10 +7,105 @@
 
 <%- include('partials/footer') %>
 <div class="home-head-container">
-<h1> Shiatsu </h1>
-<h3> The Five Elements </h3>
+<h1 class="header-home"> SHIATSU </h1>
+<div class="container">
+  <div class="row">
+    <div class="col one"></div>
+    <div class="col two"></div>
+    <div class="col three"></div>
+    <div class="col four"></div>
+    <div class="col five"></div>
+  </div>
+<h3 class="element-head"> The Five Elements </h3>
+
+<button type="button" class=" firebtn btn btn-lg btn-danger" data-bs-toggle="popover" title="Fire Elements" data-bs-placement="right" data-bs-content=
+"Season: Summer
+Climate: home-head-container
+Color: Red
+Direction: Up and Out
+Emotion: Joy
+Sound: Laughter
+Smell: Scorched
+Flavor: Bitter
+Fluid: Perspiration
+Sense Orfice: Tip of the Tongue
+Body Part Governed: Blood Vessels
+External Manifestation: Complexion
+">Fire</button>
+
+<button type="button" class=" earthbtn btn btn-lg " data-bs-toggle="popover" title="Earth Elements" data-bs-content=
+"Season: Late Summer
+Climate: Damp
+Color: Yellow/Orange
+Direction: Center
+Emotion: Sympathy/Worry
+Sound: Singing
+Smell: Fragrant
+Flavor: Sweet
+Fluid: Salvia
+Sense Orfice: Mouth
+Body Part Governed: Flesh
+External Manifestation: Lips
+">Earth</button>
+
+<button type="button" class=" metalbtn btn btn-lg " data-bs-toggle="popover" title="Metal Elements" data-bs-placement="right" data-bs-content=
+"Season: Fall
+Climate: Dry
+Color: White
+Direction: West/Down
+Emotion: Grief
+Sound: Weeping/Whinning
+Smell: Rotten
+Flavor: Spicy/Pungent
+Fluid: Mucus
+Sense Orfice: Nose
+Body Part Governed: Skin
+External Manifestation: Body Hair
+">Metal</button>
+
+
+<button type="button" class=" waterbtn btn btn-lg " data-bs-toggle="popover" title="Water Element" data-bs-placement="left" data-bs-content=
+"Season: Winter
+Climate: Cold
+Color: Black/Blue
+Direction: North/Down
+Emotion: Fear
+Sound: Groaning
+Smell: Putrid
+Flavor: Salty
+Fluid: Urine
+Sense Orfice: Ear
+Body Part Governed: Bones
+External Manifestation: Head Hair
+">Water</button>
+
+<button type="button" class=" woodbtn btn btn-lg " data-bs-toggle="popover" title="Wood Element" data-bs-placement="left" data-bs-content=
+"Season: Spring
+Climate: Wind
+Color: Green
+Direction: East/Up
+Emotion: Anger
+Sound: Shouting
+Smell: Rancid
+Flavor: Sour
+Fluid: Tears/Bile
+Sense Orfice: Eyes
+Body Part Governed: Muscles/Sinews
+External Manifestation: Nails
+">Wood</button>
+
+
+
 </div>
 
-<div class="home-elements-container">
-<img class="elements" src="/stylesheets/images/just-circles.png" alt="">
-</div>
+
+
+
+
+
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>

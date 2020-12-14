@@ -134,15 +134,80 @@ align-content: center;
 flex-direction: column;
 align-items: center;
 margin: 50px;
+position: relative;
+text-align: center;
+}
+.header-home{
+  font-size: 4rem;;
 }
 
-.home-elements-container{
+.element-head{
+  margin-top: 20px;
+}
+
+.one{
+  background-color: red;
+  width: 200px;
+  height: 20px;
+}
+.two{
+  background-color: rgb(241, 213, 87);
+}
+.three{
+  background-color: rgb(192, 192, 192);
+}
+.four{
+  background-color: rgb(97, 136, 243);
+}
+.five{
+  background-color: rgb(84, 163, 84);
+}
+
+.firebtn{
 display: flex;
-justify-content: center;
-align-content: center;
+margin-top: 50px;
+border-radius: 50%;
+padding: 20px;
+}
+
+.earthbtn{
+  background-color: rgb(255, 217, 0);
+  border-radius: 50%;
+  padding: 20px 15px;
+  margin-top: 50px;
+  margin-left: 200px;
+  color: #fff;
+}
+
+.metalbtn{
+  background-color: rgb(204, 201, 201);
+  border-radius: 50%;
+  padding: 20px 15px;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.waterbtn{
+  background-color: rgb(102, 169, 224);
+  border-radius: 50%;
+  padding: 20px 15px;
+  color: #fff;
+
+  margin-right: 300px;
+  position: absolute;
+  top: 400px;
 
 }
-.elements{
-width: 300px;
+
+.woodbtn{
+  background-color: rgb(90, 151, 95);
+  border-radius: 50%;
+  padding: 20px 15px;
+  color: #fff;
+
+  margin-right: 300px;
+  position: absolute;
+  top: 250px;
 
 }
