@@ -27,6 +27,8 @@ a {
 }
 
 /* Message board index page */
+
+
 .Mbheading {
   
   text-align: center;
@@ -94,6 +96,12 @@ a {
 .avatar-profile {
   border-radius: 50%;
   width: 70px;
+}
+
+.profile-header{
+  border: 2px solid black;
+  padding: 30px;
+  text-align: center;
 }
 
 /* treatment page */
