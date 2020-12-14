@@ -66,19 +66,17 @@ function create(req,res){
     })
     }
     
-    // let idx = req.user.messages.indexOf(req.params.id)
-    // req.user.messages.splice(idx, 1)
-    // req.user.save()
-    // .then((() =>{
-    //     res.redirect(`/messages/${req.params.id}`)
-    // }))
-    
-    
     
     
      function deleteReply(req,res){
-        Message.replies.findByIdAndDelete(req.params.id)
-        .then(()=>{
-            res.redirect(`/messages/${message._id}`)
+        console.log(req.params)
+        Message.findById(req.params.messageId)
+        .then((message) => {
+            const idx = message.replies.findIndex(reply => reply._id == req.params.replyId)
+            message.replies.splice(idx, 1)
+            message.save()
+            .then(()=> {
+                res.redirect(`/messages/${message._id}`)
+            })
         })
-     }
+    }

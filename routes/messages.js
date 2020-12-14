@@ -12,7 +12,7 @@ router.post("/:id", isLoggedIn, messCtrl.reply)
 //delete message
 router.delete("/:id", isLoggedIn, messCtrl.deleteMessage)
 //delete reply
-router.delete("/:id", isLoggedIn, messCtrl.deleteReply)
+router.delete("/:messageId/:replyId", isLoggedIn, messCtrl.deleteReply)
 
 
 

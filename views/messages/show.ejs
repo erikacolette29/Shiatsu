@@ -46,20 +46,21 @@
       <h6 class="card-subtitle mb-2 text-muted created-at">
         <%= message.createdAt.toLocaleString() %>
       </h6>
+      <!-- to delete -->
+        <% if (user.name === reply.postedBy){ %>
+            <form action="/messages/<%= message._id %>/<%= reply._id%>?_method=DELETE" class='delete-form' method="POST">
+                <button class="btn btn-light" type='submit'>X</button>
+            </form>
+            <% } %>
+         
     </div>
   </div>
 </div>
-  <% }); %>
+<% }) %>  
+ 
 
-  <!-- to delete -->
+  
 
-  <!-- <% message.replies.forEach(reply => { %>
-    <% if(user.name === reply.postedBy){ %>
-        <form action="/messages/<%= message._id%>?_method=DELETE" method="POST">
-        <button class="btn btn-light" type='submit'>x</button>
-        </form>
-        <% } %>
-        <% }) %>  -->
 
 
 
