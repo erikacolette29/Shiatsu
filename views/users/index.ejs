@@ -1,22 +1,29 @@
 <%- include('../partials/header') %>
 
-<h1 class="profile-header">Profile page</h1>
-
-<div class="profile-container">
-
-<h1><img class="avatar-profile" src="<%= user.avatar %> " alt=""/><%= user.name %> </h1>
-<h2><%= user.email %> </h2>
-
-<h2><a href=""><%= user.friends %></a></h2>
-<h2><%= user.selfeval %> </h2>
-
-<button class="btn btn-light"><a href="/users/treatment">How to Balance</a></button>
-
-</div>
 
 
+<div class="card mb-3">
+    <img src="<%= user.avatar %> " class=" avatar-profile card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= user.name %></h5>
+      <p class="card-text"><%= user.email %></p>
+      <p class="card-text"><%= user.alias %></p>
+      <p class="card-text"><%= user.bio %></p>
 
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
 
+<h2>Update Info</h2>
+<form action="/users/<%= user._id %>?_method=PUT" method="POST">
+<label class="form-label">Alias:</label>
+<input class="form-control" type="text" name="alias" value="<%= user.alias %>">
+<label  class="form-label">Avatar:</label>
+<input  class="form-control" type="text" name="avatar" value="<%= user.avatar %>" >
+<label  class="form-label">Bio:</label>
+<textarea class="form-control" name="bio" cols="10" rows="3"><%= user.bio %></textarea>
+<button type="submit" class="btn btn-light">Update</button>
+</form>
 
 
 
