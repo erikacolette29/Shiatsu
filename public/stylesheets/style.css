@@ -1,15 +1,23 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: fff;
+ 
   margin: 0 100px;
+  background-image: url("/stylesheets/images/istockphoto-914839034-1024x1024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* background: rgb(126,113,54);
+  background: radial-gradient(circle, rgba(126,113,54,1) 0%, rgba(22,18,1,1) 76%); */
+  /* background-color: #3f0303; */
 }
 
 nav {
-  background-color: white;
+ 
+  margin: 0;
 }
 
 a {
-  color: rgb(184, 179, 179);
+  color: rgb(39, 39, 39);
 }
 
 .avatar {
@@ -86,17 +94,13 @@ a {
 }
 
 /* profile page */
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 20px;
-  text-align: center;
-}
+
 
 .avatar-profile {
   border-radius: 50%;
   width: 200px;
+  padding: 20px;
+  align-items: center;
 }
 
 
@@ -134,10 +138,13 @@ align-content: center;
 flex-direction: column;
 align-items: center;
 margin: 50px;
+padding: 20px;
 text-align: center;
+
 }
 .header-home{
   font-size: 4rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.466);
 }
 
 .element-head{
@@ -199,3 +206,16 @@ padding: 20px;
   color: #fff;
 
 }
+
+.color-container{
+  margin-top: 0;
+ 
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background-color: rgba(181, 192, 187, 0.233);
+  border-radius: 2px;
+  overflow: hidden;
+  height: 100vh;
+} 
+
+
