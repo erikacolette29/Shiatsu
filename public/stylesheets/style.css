@@ -18,6 +18,7 @@ nav {
 
 a {
   color: rgb(39, 39, 39);
+  text-decoration: none;
 }
 
 .avatar {
@@ -170,46 +171,33 @@ text-align: center;
   background-color: rgb(84, 163, 84);
 }
 
-.firebtn{
+.firebtn,.earthbtn,.metalbtn,.waterbtn,.woodbtn{
 border-radius: 50%;
-padding: 20px;
+padding: 30px;
+}
+
+.firebtn{
+background-color: rgba(138, 39, 39, 0.541);
 }
 
 .earthbtn{
-  background-color: rgb(255, 217, 0);
-  border-radius: 50%;
-  padding: 20px 15px;
- 
-  color: #fff;
+  background-color: rgba(255, 217, 0, 0.425);
 }
 
 .metalbtn{
-  background-color: rgb(204, 201, 201);
-  border-radius: 50%;
-  padding: 20px 15px;
-  color: #fff;
- 
+  background-color: rgba(204, 201, 201, 0.486);
 }
 
 .waterbtn{
-  background-color: rgb(102, 169, 224);
-  border-radius: 50%;
-  padding: 20px 15px;
-  color: #fff;
-
+  background-color: rgba(102, 169, 224, 0.39);
 }
 
 .woodbtn{
-  background-color: rgb(90, 151, 95);
-  border-radius: 50%;
-  padding: 20px 15px;
-  color: #fff;
-
+  background-color: rgba(90, 151, 95, 0.432);
 }
 
 .color-container{
   margin-top: 0;
- 
   top: calc(50% - 175px);
   left: calc(50% - 125px);
   background-color: rgba(181, 192, 187, 0.233);
