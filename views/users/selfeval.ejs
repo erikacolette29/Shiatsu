@@ -1,14 +1,37 @@
 <%- include('../partials/header') %>
 
+<form action="/selfevals" method="POST">
+    <label class="alert alert-primary">What Element Are You?
+      <select class="btn dropdown-toggle" name="whatelementareyou">
+          <option value="Fire">Fire</option>
+          <option value="Earth">Earth</option>
+          <option value="Metal">Metal</option>
+          <option value="Water">Water</option>
+          <option value="Wood">Wood</option>
+        </select>
+    </label><br>
+    <label>Jitsu Element
+      <select name="jitsuelement">
+        <option value="Fire">Fire</option>
+        <option value="Earth">Earth</option>
+        <option value="Metal">Metal</option>
+        <option value="Water">Water</option>
+        <option value="Wood">Wood</option>
+        </select>
+    </label><br> 
+    <label>Kyo Element
+      <select name="kyoelement">
+        <option value="Fire">Fire</option>
+        <option value="Earth">Earth</option>
+        <option value="Metal">Metal</option>
+        <option value="Water">Water</option>
+        <option value="Wood">Wood</option>
+        </select>
+    </label><br> 
 
-
-
-
-
-
-
-
-
+  <button class="btn btn-outline-info" type="submit">Save Eval</button> 
+  </form>
+  
 
 
 

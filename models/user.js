@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const selfevalSchema = new Schema(
   {
-    whatelementareyou: String,
-    jitsuelement: String,
-    kyoelement: String
+    whatelementareyou: {type: String, enum: ['Fire', 'Earth', 'Metal', 'Water', 'Wood']},
+    jitsuelement: {type: String, enum: ['Fire', 'Earth', 'Metal', 'Water', 'Wood']},
+    kyoelement: {type: String, enum: ['Fire', 'Earth', 'Metal', 'Water', 'Wood']},
 
   },{
     timestamps: true

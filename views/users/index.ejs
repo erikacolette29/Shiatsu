@@ -27,7 +27,33 @@
 </form>
 
 
+<!-- self eval -->
+<table class="table">
+    <thead >
+      <tr>
+        <th scope="col">What Element Are You?</th>
+        <th scope="col">Jitsu Element</th>
+        <th scope="col">Kyo Element</th>
+      </tr>
+    </thead>
+    <tbody>
 
+
+        <% user.selfeval.forEach(function(s){%>
+            <tr>
+              <td><%= s.whatelementareyou %></td>
+              <td><%= s.jitsuelement %></td>
+              <td><%= s.kyoelement %></td>
+              <td>
+                <form action="/index/<%= s._id %>?_method=DELETE"
+                    class="delete-form" method="POST">
+                    <button class="btn btn-light" type="submit">🗑</button>
+                  </form>
+                </td>
+    
+             
+            </tr>
+      <%  })%>
 
 
 <%- include('../partials/footer') %>
