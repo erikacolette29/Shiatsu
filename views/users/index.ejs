@@ -28,6 +28,9 @@
 
 
 <!-- self eval -->
+
+
+
 <table class="table">
     <thead >
       <tr>
@@ -39,13 +42,13 @@
     <tbody>
 
 
-        <% user.selfeval.forEach(function(s){%>
+        <% user.selfevals.forEach(function(s){%>
             <tr>
               <td><%= s.whatelementareyou %></td>
               <td><%= s.jitsuelement %></td>
               <td><%= s.kyoelement %></td>
               <td>
-                <form action="/index/<%= s._id %>?_method=DELETE"
+                <form action="/<%= s._id %>?_method=DELETE"
                     class="delete-form" method="POST">
                     <button class="btn btn-light" type="submit">🗑</button>
                   </form>

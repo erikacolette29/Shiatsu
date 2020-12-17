@@ -2,7 +2,7 @@ body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
  
   margin: 0 100px;
-  background-image: url("/stylesheets/images/istockphoto-914839034-1024x1024.jpg");
+  background-image: url("/stylesheets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -132,6 +132,15 @@ a {
 
 /* home */
 
+.color-container{
+  margin-top: 0;
+  background-color: rgba(181, 192, 187, 0.233);
+  border-radius: 2px;
+  overflow: hidden;
+  height: 100vh;
+
+} 
+
 .home-head-container{
 display: flex;
 justify-content: center;
@@ -152,7 +161,7 @@ text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
+/* 
 .one{
   background-color: red;
   width: 200px;
@@ -169,11 +178,12 @@ text-align: center;
 }
 .five{
   background-color: rgb(84, 163, 84);
-}
+} */
 
 .firebtn,.earthbtn,.metalbtn,.waterbtn,.woodbtn{
 border-radius: 50%;
 padding: 30px;
+margin: 15px;
 }
 
 .firebtn{
@@ -196,14 +206,8 @@ background-color: rgba(138, 39, 39, 0.541);
   background-color: rgba(90, 151, 95, 0.432);
 }
 
-.color-container{
-  margin-top: 0;
-  top: calc(50% - 175px);
-  left: calc(50% - 125px);
-  background-color: rgba(181, 192, 187, 0.233);
-  border-radius: 2px;
-  overflow: hidden;
-  height: 100vh;
-} 
 
 
+.homebtn{
+  margin: 30px;
+}

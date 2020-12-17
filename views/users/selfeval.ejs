@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<form action="/selfevals" method="POST">
+<form action="/users/<%= user._id %>/neweval?_method=PUT" method="POST">
     <label class="alert alert-primary">What Element Are You?
       <select class="btn dropdown-toggle" name="whatelementareyou">
           <option value="Fire">Fire</option>
