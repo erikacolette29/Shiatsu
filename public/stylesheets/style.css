@@ -5,7 +5,8 @@ body {
   background-image: url("/stylesheets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh
+  min-height: 100vh;
+  display: flex;
 }
 
 nav {
@@ -160,7 +161,7 @@ a {
   background-color: rgba(181, 192, 187, 0.233);
   border-radius: 2px;
   overflow: hidden;
-
+  flex-grow: 100;
 }
 
 .home-head-container {
@@ -246,3 +247,9 @@ a {
 
 /* SelfEvaluation Page */
 
+
+.container-box{
+  display: flex;
+flex-direction: column;
+flex-grow: 100;
+}
