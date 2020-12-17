@@ -6,9 +6,16 @@
 
 
 
-<% users.forEach(u =>{
-    a
-}) %> 
+<% users.forEach(u =>{ %>
+    <a href="/users/<%= u._id%>">
+<div class="card">
+<div class="card-body">
+<img src="<%= u.avatar ? u.avatar : 'https://www.stefanospizzaknoxville.com/wordpress/wp-content/uploads/diagonal-rainbow-stripes-01.png' %>" alt=""> <%= u.name %> </a>
+
+</div>
+</div> <br>
+
+<% }) %> 
 
 
 
