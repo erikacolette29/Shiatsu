@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 
 <form action="/users/<%= user._id %>/neweval?_method=PUT" method="POST">
-    <label class="alert alert-primary">What Element Are You?
-      <select class="btn dropdown-toggle" name="whatelementareyou">
+    <label>What Element Are You?
+      <select class="dropdown-toggle" name="whatelementareyou">
           <option value="Fire">Fire</option>
           <option value="Earth">Earth</option>
           <option value="Metal">Metal</option>
@@ -29,7 +29,7 @@
         </select>
     </label><br> 
 
-  <button class="btn btn-outline-info" type="submit">Save Eval</button> 
+  <button class="btn btn-outline-light" type="submit">Save Eval</button> 
   </form>
   
 

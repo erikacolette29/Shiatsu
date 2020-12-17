@@ -1,18 +1,14 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
- 
+
   margin: 0 100px;
   background-image: url("/stylesheets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
-  /* background: rgb(126,113,54);
-  background: radial-gradient(circle, rgba(126,113,54,1) 0%, rgba(22,18,1,1) 76%); */
-  /* background-color: #3f0303; */
+  min-height: 100vh
 }
 
 nav {
- 
   margin: 0;
 }
 
@@ -37,9 +33,7 @@ a {
 
 /* Message board index page */
 
-
 .Mbheading {
-  
   text-align: center;
   border: 2px solid black;
   padding: 30px;
@@ -96,13 +90,44 @@ a {
 
 /* profile page */
 
-
 .avatar-profile {
   border-radius: 50%;
   width: 200px;
-  padding: 20px;
-  align-items: center;
+  padding: 15px;
+  margin: 30px auto;
+  border: 2px rgba(240, 248, 255, 0.452) solid;
 }
+
+.card {
+  background-color: rgba(158, 197, 202, 0.075);
+  text-align: center;
+}
+
+.card-title {
+  background-color: rgba(188, 209, 218, 0.37);
+}
+
+.card-text {
+  color: rgb(66, 65, 64);
+}
+
+.btncolor {
+  background-color: rgba(177, 224, 230, 0.39);
+}
+
+
+/* update info profile page */
+
+
+.form-control{
+  background-color: rgba(158, 197, 202, 0.075);
+}
+
+.update-text{
+  text-align: center;
+}
+
+
 
 
 
@@ -111,53 +136,49 @@ a {
   border: 2px solid black;
   padding: 20px;
   text-align: center;
- 
 }
 
-.diagram{
+.diagram {
   display: flex;
- justify-content: center;
- align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.diagram-size{
+.diagram-size {
   width: 400px;
   margin: 50px;
-  
 }
 
-.treat-text{
+.treat-text {
   text-align: center;
 }
 
 /* home */
 
-.color-container{
+.color-container {
   margin-top: 0;
   background-color: rgba(181, 192, 187, 0.233);
   border-radius: 2px;
   overflow: hidden;
-  height: 100vh;
-
-} 
-
-.home-head-container{
-display: flex;
-justify-content: center;
-align-content: center;
-flex-direction: column;
-align-items: center;
-margin: 50px;
-padding: 20px;
-text-align: center;
 
 }
-.header-home{
+
+.home-head-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.header-home {
   font-size: 4rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.466);
 }
 
-.element-head{
+.element-head {
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -180,34 +201,48 @@ text-align: center;
   background-color: rgb(84, 163, 84);
 } */
 
-.firebtn,.earthbtn,.metalbtn,.waterbtn,.woodbtn{
-border-radius: 50%;
-padding: 30px;
-margin: 15px;
+.firebtn,
+.earthbtn,
+.metalbtn,
+.waterbtn,
+.woodbtn {
+  border-radius: 50%;
+  padding: 30px;
+  margin: 15px;
 }
 
-.firebtn{
-background-color: rgba(138, 39, 39, 0.541);
+.firebtn {
+  background-color: rgba(138, 39, 39, 0.541);
 }
 
-.earthbtn{
+.earthbtn {
   background-color: rgba(255, 217, 0, 0.425);
 }
 
-.metalbtn{
+.metalbtn {
   background-color: rgba(204, 201, 201, 0.486);
 }
 
-.waterbtn{
+.waterbtn {
   background-color: rgba(102, 169, 224, 0.39);
 }
 
-.woodbtn{
+.woodbtn {
   background-color: rgba(90, 151, 95, 0.432);
 }
 
-
-
-.homebtn{
+.homebtn {
   margin: 30px;
 }
+
+.homebtn:hover{
+  background-color: rgba(240, 248, 255, 0.301);
+}
+
+.home-link:hover{
+  color: rgb(73, 72, 72);
+}
+
+
+/* SelfEvaluation Page */
+

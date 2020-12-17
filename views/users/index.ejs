@@ -1,5 +1,5 @@
 <%- include('../partials/header') %>
-
+<div class="color-container">
 
 
 <div class="card mb-3">
@@ -7,15 +7,15 @@
     <div class="card-body">
       <h5 class="card-title"><%= user.name %></h5>
       <p class="card-text"><%= user.email %></p>
-      <p class="card-text"><%= user.alias %></p>
-      <p class="card-text"><%= user.bio %></p>
-      <button class="btn btn-light"><a href="/users/treatment">How to Balance</a></button>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text">Alias: <%= user.alias %></p>
+      <p class="card-text">Bio: <br> <%= user.bio %></p>
+      <button class=" btncolor btn "><a href="/users/treatment">How to Balance</a></button>
+      <p class="card-text"><small class=" text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
 
 
-<h2>Update Info</h2>
+<h2 class="update-text">Update Info</h2>
 <form action="/users/<%= user._id %>?_method=PUT" method="POST">
 <label class="form-label">Alias:</label>
 <input class="form-control" type="text" name="alias" value="<%= user.alias %>">
@@ -58,5 +58,5 @@
             </tr>
       <%  })%>
 
-
+    </div>
 <%- include('../partials/footer') %>
