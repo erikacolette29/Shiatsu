@@ -14,12 +14,11 @@
     <p class="card-text">Element Type:</p>
 
 
-  
+ <% if(user.selfevals.length > 0) {%> 
       <div><%= user.selfevals[user.selfevals.length -1].whatelementareyou  %></div><br>
-  
-   
-
-
+ <% } else { %>
+    <div>No Evals</div>
+<%} %>
 
     <% if (!user._id.equals(user._id) && !user.friends.includes(user._id)) { %>
       <a href="/users/<%= user._id %>/friend" class="btn btn-primary">Add Friend</a>
