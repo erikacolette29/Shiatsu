@@ -94,7 +94,8 @@ function showUdetails(req,res){
     .then((userInfo) =>{
         res.render("users/usershow", {
         title: "User Details",
-        user: userInfo
+        user: userInfo,
+        loggedInuser: req.user
         
         })
 })

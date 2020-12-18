@@ -11,7 +11,11 @@
     <h5 class="card-title"><%= user.name %></h5>
     <p class="card-text">Joined: <%= user.createdAt.toLocaleString().split(',')[0] %></p>
     <p class="card-text">Email: <a href="mailto:<%= user.email %>"><%= user.email %></a></p>
+
+
+
     <p class="card-text">Element Type:</p>
+
 
 
     <% if(user.selfevals.length > 0) {%> 
@@ -20,12 +24,16 @@
       <div>No Evals</div>
   <%} %>
 
-    <% if (!user._id.equals(user._id) && !user.friends.includes(user._id)) { %>
-      <a href="/users/<%= user._id %>/friend" class="btn btn-primary">Add Friend</a>
-    <% } %>
-    <% if (!user._id.equals(user._id) && user.friends.includes(user._id)) { %>
-      <a href="/users/<%= user._id %>/unfriend" class="btn btn-primary">Remove Friend</a>
-    <% } %>
+
+
+
+  <% if (!user._id.equals(loggedInuser._id) && !loggedInuser.friends.includes(user._id)) { %>
+    <a href="/users/<%= user._id %>/friend" class="btn btn-primary">Add Friend</a>
+  <% } %>
+  <% if (!user._id.equals(loggedInuser._id) && loggedInuser.friends.includes(user._id)) { %>
+    <a href="/users/<%= user._id %>/unfriend" class="btn btn-primary">Remove Friend</a>
+  <% } %>
+ 
   </div>
 </div>
 
