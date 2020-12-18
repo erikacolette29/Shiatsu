@@ -4,7 +4,7 @@
 
 This app is designed to educate and inform people about the eastern massage practice known as Shiatsu. Learn the theory, and find the element that speaks to you. Make a profile, add friends, and start a conversation on the message board. Figure out which elements are too much(jitsu) of or too little(Kyo) of, and find a treatment plan. Get linked up with a therapist from resources provided. 
 
-<a href="https://shiatsu-app.herokuapp.com/">My Qi</a>
+<a href="https://shiatsu-app.herokuapp.com/">My Qi</a> <br>
 <a href="https://trello.com/b/WHvLpju6/shiatsu-app">Trello Board</a>
 
 ![wireframe](public/stylesheets/images/shiatsuwireframe.png)
