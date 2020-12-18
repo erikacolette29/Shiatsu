@@ -1,6 +1,6 @@
 
 
-# Shiatsu App
+# My Qi App
 
 This app is designed to educate and inform people about the eastern massage practice known as Shiatsu. Learn the theory, and find the element that speaks to you. Make a profile, add friends, and start a conversation on the message board. Figure out which elements are too much(jitsu) of or too little(Kyo) of, and find a treatment plan. Get linked up with a therapist from resources provided. 
 
