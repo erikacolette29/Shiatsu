@@ -155,6 +155,10 @@ a {
 }
 
 /* home */
+.theory-header{
+  text-align: center;
+  margin-top: 40px;
+}
 
 .color-container {
   margin-top: 0;
@@ -279,11 +283,21 @@ a {
   color: white;
   transform: rotateY(180deg);
   border-radius: 10px;
+  padding: 20px;
 }
 
-
-
-
+.eb{
+  background-color: rgb(243, 192, 51);
+}
+.mb{
+  background-color: rgb(206, 204, 204);
+}
+.wb{
+  background-color: rgb(31, 31, 104);
+}
+.wob{
+  background-color: rgb(28, 134, 28);
+}
 
 
 
