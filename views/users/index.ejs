@@ -9,6 +9,11 @@
       <p class="card-text"><%= user.email %></p>
       <p class="card-text">Alias: <%= user.alias %></p>
       <p class="card-text">Bio: <br> <%= user.bio %></p>
+      <%if(user.selfevals.length > 0) { %>
+      <p class="card-text">Element: <br><%=user.selfevals[user.selfevals.length -1].whatelementareyou%></p>
+      <%} else {%>
+        <p class="card-text">Element: none</p>
+        <%}%>
       <button class=" btncolor btn "><a href="/users/treatment">How to Balance</a></button>
       <p class="card-text"><small class=" text-muted">Last updated 3 mins ago</small></p>
     </div>
