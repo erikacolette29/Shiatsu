@@ -225,6 +225,10 @@ a {
   display: flex;
   flex-direction: row;
 }
+.cards-container2{
+  display: flex;
+  flex-direction: row;
+}
 
 .flip-card {
   background-color: transparent;
