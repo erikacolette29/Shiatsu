@@ -4,28 +4,28 @@
 <h3><%= title %></h3>
 
 <div class="card" style="width: 18rem;">
-  <img id="avatarPhoto" style="height: 18rem;" class="card-img-top" src="<%= userInfo.avatar ? userInfo.avatar : 'https://www.stefanospizzaknoxville.com/wordpress/wp-content/uploads/diagonal-rainbow-stripes-01.png'  %>" alt="Card image cap">
+  <img id="avatarPhoto" style="height: 18rem;" class="card-img-top" src="<%= user.avatar ? user.avatar : 'https://www.stefanospizzaknoxville.com/wordpress/wp-content/uploads/diagonal-rainbow-stripes-01.png'  %>" alt="Card image cap">
   <div class="card-header">
   </div>
   <div class="card-body">
-    <h5 class="card-title"><%= userInfo.name %></h5>
-    <p class="card-text">Joined: <%= userInfo.createdAt.toLocaleString().split(',')[0] %></p>
-    <p class="card-text">Email: <a href="mailto:<%= userInfo.email %>"><%= userInfo.email %></a></p>
+    <h5 class="card-title"><%= user.name %></h5>
+    <p class="card-text">Joined: <%= user.createdAt.toLocaleString().split(',')[0] %></p>
+    <p class="card-text">Email: <a href="mailto:<%= user.email %>"><%= user.email %></a></p>
     <p class="card-text">Element Type:</p>
 
 
-    <% user.selfevals.forEach(s => { %>
-      <div><%= s.whatelementareyou %></div><br>
-    <% }) %><br>
+  
+      <div><%= user.selfevals[user.selfevals.length -1].whatelementareyou  %></div><br>
+  
    
 
 
-    
-    <% if (!userInfo._id.equals(user._id) && !user.friends.includes(userInfo._id)) { %>
-      <a href="/users/<%= userInfo._id %>/friend" class="btn btn-primary">Add Friend</a>
+
+    <% if (!user._id.equals(user._id) && !user.friends.includes(user._id)) { %>
+      <a href="/users/<%= user._id %>/friend" class="btn btn-primary">Add Friend</a>
     <% } %>
-    <% if (!userInfo._id.equals(user._id) && user.friends.includes(userInfo._id)) { %>
-      <a href="/users/<%= userInfo._id %>/unfriend" class="btn btn-primary">Remove Friend</a>
+    <% if (!user._id.equals(user._id) && user.friends.includes(user._id)) { %>
+      <a href="/users/<%= user._id %>/unfriend" class="btn btn-primary">Remove Friend</a>
     <% } %>
   </div>
 </div>

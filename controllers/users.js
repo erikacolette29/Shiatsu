@@ -12,6 +12,7 @@ module.exports = {
  showUdetails,
  addFriend,
  unFriend,
+ deleteEval,
 }
 
 function index(req,res) {
@@ -53,6 +54,25 @@ User.findById(req.params.id, function(err, user){
 })
 }
 
+
+function deleteEval(req,res){
+console.log(req.user)
+    User.findById(req.user._id)
+    .then((user) =>{
+        let idx = user.selfevals.findIndex(selfeval => selfeval._id === req.params.selfevalId)
+       user.selfevals.splice(idx, 1)
+       console.log(user)
+        user.save()
+        .then(() =>{
+            res.redirect("/users")
+        })
+    })
+
+    }
+
+
+
+
 function showTheory(req,res){
     User.find({}).then((users)=> {
         res.render("users/theory", {title: "Theory", user: req.user, users})
@@ -74,8 +94,8 @@ function showUdetails(req,res){
     .then((userInfo) =>{
         res.render("users/usershow", {
         title: "User Details",
-        userInfo, 
-        user: req.user
+        user: userInfo
+        
         })
 })
 }

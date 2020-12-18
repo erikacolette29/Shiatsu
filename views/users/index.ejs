@@ -48,17 +48,22 @@
               <td><%= s.jitsuelement %></td>
               <td><%= s.kyoelement %></td>
               <td>
-                <form action="/<%= s._id %>?_method=DELETE"
+                
+                <form action="/users/<%= s._id %>?_method=DELETE"
                     class="delete-form" method="POST">
                     <button class="btn btn-light" type="submit">🗑</button>
                   </form>
                 </td>
-    
+              
              
             </tr>
       <%  })%>
 
     </div>
+   
+  
+
+
 
 
 
@@ -67,7 +72,6 @@
 <% user.friends.forEach(f => { %>
     <a href="/users/<%= f._id %>"><img width="30" id="avatarPhoto" src="<%= f.avatar %>" alt=""><%= f.name %> <%= f.alias ? `(${f.alias})` : '' %></a><br><br>
     <% }) %>
-
 
 
 

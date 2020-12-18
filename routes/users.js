@@ -10,6 +10,7 @@ router.get("/treatment", isLoggedIn, userCtrl.showtreatment)
 router.get("/selfeval", isLoggedIn, userCtrl.showSelfEval)
 router.put("/:id/neweval", isLoggedIn, userCtrl.createEval)
 
+router.delete("/:selfevalId", isLoggedIn, userCtrl.deleteEval)
 
 router.get("/theory", isLoggedIn, userCtrl.showTheory)
 
