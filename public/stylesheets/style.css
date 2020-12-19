@@ -156,8 +156,14 @@ a {
 
 /* home */
 .theory-header{
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
+  color: rgba(61, 3, 3, 0.63);
+  width: 50%;
+  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
+  padding-bottom: 20px;
+  margin-left: 50px;
+
 }
 
 .color-container {
@@ -193,6 +199,7 @@ a {
   margin: 30px ;
   background-color: rgba(240, 248, 255, 0.473);
   border: none;
+  width: fit-content
 }
 
 .homebtn:hover{
@@ -224,20 +231,22 @@ a {
 }
 
 
-/* flip card */
+/* Theory flip card */
 .cards-container{
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 .cards-container2{
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 .flip-card {
   background-color: transparent;
   width: 400px;
-  height: 830px;
+  height: 850px;
   perspective: 1000px;
   margin: 50px;
  
@@ -305,10 +314,65 @@ ul{
   list-style-type: none;
 }
 
+.header-theory{
+  margin: 20px 50px;
+color: rgb(65, 61, 51);
 
 
+}
+.description-shiatsu{
+  color: rgb(95, 90, 74);
+  width: 70%;
+  margin: 0 50px;
+}
+.description-shiatsu-find{
+  color: rgb(56, 54, 45);
+  width: 70%;
+  margin: 0 50px;
+  font-size: 1.2rem;
+}
 
+.larger-font{
+  font-size: 2rem;
+}
+.cycle-descriptions{
+  display: flex;
+  flex-direction: row;
+  color: rgb(95, 90, 74);
+  justify-content: start;
+  margin: 0 30px;
+  
+}
 
+.homebtn2 {
+  margin: 20px 50px ;
+  background-color: rgba(3, 44, 3, 0.486);
+  border: none;
+  width: fit-content;
+
+  
+}
+
+.homebtn2:hover{
+  background-color: rgba(240, 248, 255, 0.301);
+
+}
+
+.home-link2:hover{
+  color: rgb(255, 255, 255);
+}
+.home-link2{
+  color: rgba(233, 229, 218, 0.836);
+}
+
+/* .diagram-container{
+display: flex;
+}
+.diagram{
+  width: 200px;
+ margin: 10px;
+
+} */
 
 /* SelfEvaluation Page */
 
