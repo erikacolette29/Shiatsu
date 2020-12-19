@@ -1,6 +1,5 @@
 body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-
   margin: 0 100px;
   background-image: url("/stylesheets/images/background.jpg");
   background-repeat: no-repeat;
@@ -8,12 +7,15 @@ body {
   min-height: 100vh;
   display: flex;
 }
-
+/* Navigation */
 nav {
   margin: 0;
 }
+nav, a:hover{
+color: rgba(255, 255, 255, 0.671);
+}
 
-a {
+a{
   color: rgb(39, 39, 39);
   text-decoration: none;
 }
@@ -31,6 +33,190 @@ a {
 .x-button {
   margin: 20px 0;
 }
+
+.color-container {
+  margin-top: 0;
+  background-color: rgba(181, 192, 187, 0.233);
+  border-radius: 2px;
+  overflow: hidden;
+  flex-grow: 100;
+}
+.card {
+  display: flex;
+  margin: 50px auto;
+  background-color: rgba(209, 221, 223, 0.13);
+  text-align: center;
+  width: fit-content;
+  padding: 50px;
+  /* box-shadow: 5px 5px rgba(112, 112, 108, 0.397); */
+}
+
+/* home */
+.home-head-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.header-home {
+  font-size: 4rem;
+  color: rgba(61, 3, 3, 0.63);
+  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
+}
+
+.element-head {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(65, 61, 51);
+}
+.header-question {
+  font-size: 3rem;
+  color: rgb(65, 61, 51);
+}
+.images{
+  display: flex;
+}
+.pic {
+  width: 50px;
+  margin: 20px;
+}
+
+.homebtn {
+  margin: 30px;
+  background-color: rgba(240, 248, 255, 0.473);
+  border: none;
+  width: fit-content;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.homebtn:hover {
+  background-color: rgba(240, 248, 255, 0.301);
+}
+
+.home-link:hover {
+  color: rgb(73, 72, 72);
+}
+
+/* profile page */
+.card2 {
+  display: flex;
+  margin: 50px auto;
+  background-color: rgba(209, 221, 223, 0.13);
+  text-align: center;
+  width: fit-content;
+  padding: 50px;
+}
+.avatar-profile {
+  border-radius: 50%;
+  width: 200px;
+  padding: 15px;
+  margin: 30px auto;
+  border: 2px rgba(240, 248, 255, 0.452) solid;
+}
+.card-title {
+  background-color: rgba(188, 209, 218, 0.37);
+}
+
+.card-text {
+  color: rgb(66, 65, 64);
+}
+
+.btncolor {
+  background-color: rgba(177, 224, 230, 0.39);
+  margin: 10px;
+}
+
+
+/* update info profile page */
+.update-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(61, 3, 3, 0.63);
+  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
+  padding-bottom: 20px;
+  width: 50%;
+  margin: 50px auto 30px;
+}
+.update-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+.form-label{
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.form-control {
+  background-color: rgba(158, 197, 202, 0.075);
+  text-align: center;
+}
+.update-button{
+  margin: 20px;
+  background-color: rgba(215, 250, 239, 0.521);
+  border: none;
+}
+
+
+/* friends */
+.friends-box{
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+#avatarPhoto{
+  border-radius: 50%;
+  margin-right: 10px;
+  
+}
+/* self evals */
+.table{
+width: fit-content;
+margin: 50px auto;
+}
+.delete{
+  background-color: rgba(0, 0, 255, 0);
+  border: none;
+}
+.delete:hover{
+  background-color: rgba(240, 248, 255, 0.377);
+}
+
+
+/* treatment page */
+.treatment-head {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.diagram {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.diagram-size {
+  width: 400px;
+  margin: 50px;
+}
+
+.treat-text {
+  text-align: center;
+}
+
+
 
 /* Message board index page */
 
@@ -109,132 +295,9 @@ a {
   height: 200px;
   margin: auto;
 }
-/* profile page */
 
-.avatar-profile {
-  border-radius: 50%;
-  width: 200px;
-  padding: 15px;
-  margin: 30px auto;
-  border: 2px rgba(240, 248, 255, 0.452) solid;
-}
-.card {
-  display: flex;
-  margin: 50px auto;
-  background-color: rgba(209, 221, 223, 0.13);
-  text-align: center;
-  width: fit-content;
-  padding: 50px;
-  /* box-shadow: 5px 5px rgba(112, 112, 108, 0.397); */
-}
-.card2 {
-  display: flex;
-  margin: 50px auto;
-  background-color: rgba(209, 221, 223, 0.13);
-  text-align: center;
-  width: fit-content;
-  padding: 50px;
-  /* box-shadow: 5px 5px rgba(112, 112, 108, 0.397); */
-}
+/* Theory Page */
 
-
-.card-title {
-  background-color: rgba(188, 209, 218, 0.37);
-}
-
-.card-text {
-  color: rgb(66, 65, 64);
-}
-
-.btncolor {
-  background-color: rgba(177, 224, 230, 0.39);
-  margin: 10px;
-}
-
-/* update info profile page */
-
-.form-control {
-  background-color: rgba(158, 197, 202, 0.075);
-  text-align: center;
-}
-.form-label{
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.update-text {
-  text-align: center;
- 
-  font-size: 1.5rem;
-  color: rgba(61, 3, 3, 0.63);
-  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
-  padding-bottom: 20px;
-  width: 50%;
-  margin: 50px auto 30px;
- 
-}
-.update-button{
-  margin: 20px;
-  background-color: rgba(215, 250, 239, 0.521);
-  border: none;
-}
-
-.update-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
-}
-/* friends */
-.friends-box{
- 
-  text-align: left;
-  width: fit-content;
-  margin: auto;
-}
-#avatarPhoto{
-  border-radius: 50%;
-  margin-right: 10px;
-  
-}
-/* self evals */
-.table{
-width: fit-content;
-margin: 50px auto;
-}
-.delete{
-  background-color: rgba(0, 0, 255, 0);
-  border: none;
-}
-.delete:hover{
-  background-color: rgba(240, 248, 255, 0.377);
-}
-
-/* treatment page */
-.treatment-head {
-  border: 2px solid black;
-  padding: 20px;
-  text-align: center;
-}
-
-.diagram {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.diagram-size {
-  width: 400px;
-  margin: 50px;
-}
-
-.treat-text {
-  text-align: center;
-}
-
-/* home */
 .theory-header {
   text-align: left;
   margin-top: 40px;
@@ -244,69 +307,45 @@ margin: 50px auto;
   padding-bottom: 20px;
   margin-left: 50px;
 }
-
-.color-container {
-  margin-top: 0;
-  background-color: rgba(181, 192, 187, 0.233);
-  border-radius: 2px;
-  overflow: hidden;
-  flex-grow: 100;
-}
-
-.home-head-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
-  padding: 20px;
-  text-align: center;
-}
-.header-home {
-  font-size: 4rem;
-  color: rgba(61, 3, 3, 0.63);
-  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
-}
-
-.element-head {
-  margin-top: 20px;
-  margin-bottom: 40px;
+.header-theory {
+  margin: 20px 50px;
   color: rgb(65, 61, 51);
 }
+.description-shiatsu {
+  color: rgb(95, 90, 74);
+  width: 70%;
+  margin: 0 50px;
+}
+.cycle-descriptions {
+  display: flex;
+  flex-direction: row;
+  color: rgb(95, 90, 74);
+  justify-content: start;
+  margin: 0 30px;
+}
+.description-shiatsu-find {
+  color: rgb(56, 54, 45);
+  width: 70%;
+  margin: 0 50px;
+  font-size: 1.2rem;
+}
 
-.homebtn {
-  margin: 30px;
-  background-color: rgba(240, 248, 255, 0.473);
+.homebtn2 {
+  margin: 20px 50px;
+  background-color: rgba(3, 44, 3, 0.486);
   border: none;
   width: fit-content;
 }
 
-.homebtn:hover {
+.homebtn2:hover {
   background-color: rgba(240, 248, 255, 0.301);
 }
 
-.home-link:hover {
-  color: rgb(73, 72, 72);
+.home-link2:hover {
+  color: rgb(255, 255, 255);
 }
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.header-question {
-  font-size: 3rem;
-  color: rgb(65, 61, 51);
-}
-
-.images {
-  display: flex;
-}
-.pic {
-  width: 50px;
-  margin: 20px;
+.home-link2 {
+  color: rgba(233, 229, 218, 0.836);
 }
 
 /* Theory flip card */
@@ -371,6 +410,9 @@ margin: 50px auto;
   padding: 20px;
 }
 
+.larger-font {
+  font-size: 2rem;
+}
 .eb {
   background-color: rgb(243, 192, 51);
 }
@@ -388,50 +430,11 @@ ul {
   list-style-type: none;
 }
 
-.header-theory {
-  margin: 20px 50px;
-  color: rgb(65, 61, 51);
-}
-.description-shiatsu {
-  color: rgb(95, 90, 74);
-  width: 70%;
-  margin: 0 50px;
-}
-.description-shiatsu-find {
-  color: rgb(56, 54, 45);
-  width: 70%;
-  margin: 0 50px;
-  font-size: 1.2rem;
-}
 
-.larger-font {
-  font-size: 2rem;
-}
-.cycle-descriptions {
-  display: flex;
-  flex-direction: row;
-  color: rgb(95, 90, 74);
-  justify-content: start;
-  margin: 0 30px;
-}
 
-.homebtn2 {
-  margin: 20px 50px;
-  background-color: rgba(3, 44, 3, 0.486);
-  border: none;
-  width: fit-content;
-}
 
-.homebtn2:hover {
-  background-color: rgba(240, 248, 255, 0.301);
-}
 
-.home-link2:hover {
-  color: rgb(255, 255, 255);
-}
-.home-link2 {
-  color: rgba(233, 229, 218, 0.836);
-}
+
 
 /* .diagram-container{
 display: flex;
