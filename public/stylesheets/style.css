@@ -116,21 +116,15 @@ a {
   background-color: rgba(177, 224, 230, 0.39);
 }
 
-
 /* update info profile page */
 
-
-.form-control{
+.form-control {
   background-color: rgba(158, 197, 202, 0.075);
 }
 
-.update-text{
+.update-text {
   text-align: center;
 }
-
-
-
-
 
 /* treatment page */
 .treatment-head {
@@ -155,7 +149,7 @@ a {
 }
 
 /* home */
-.theory-header{
+.theory-header {
   text-align: left;
   margin-top: 40px;
   color: rgba(61, 3, 3, 0.63);
@@ -163,7 +157,6 @@ a {
   border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
   padding-bottom: 20px;
   margin-left: 50px;
-
 }
 
 .color-container {
@@ -192,52 +185,49 @@ a {
 .element-head {
   margin-top: 20px;
   margin-bottom: 40px;
-  color: rgba(68, 60, 61, 0.705)
+  color: rgba(68, 60, 61, 0.705);
 }
 
 .homebtn {
-  margin: 30px ;
+  margin: 30px;
   background-color: rgba(240, 248, 255, 0.473);
   border: none;
-  width: fit-content
+  width: fit-content;
 }
 
-.homebtn:hover{
+.homebtn:hover {
   background-color: rgba(240, 248, 255, 0.301);
 }
 
-.home-link:hover{
+.home-link:hover {
   color: rgb(73, 72, 72);
 }
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-
-.header-question{
+.header-question {
   font-size: 3rem;
 }
 
-
-.images{
+.images {
   display: flex;
 }
-.pic{
+.pic {
   width: 50px;
   margin: 20px;
 }
 
-
 /* Theory flip card */
-.cards-container{
+.cards-container {
   display: flex;
   flex-direction: row;
   margin: auto;
 }
-.cards-container2{
+.cards-container2 {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -249,7 +239,6 @@ a {
   height: 850px;
   perspective: 1000px;
   margin: 50px;
- 
 }
 
 .flip-card-inner {
@@ -259,23 +248,22 @@ a {
   text-align: left;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   text-decoration: none;
-
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  
 }
 
 .flip-card-front {
@@ -295,73 +283,65 @@ a {
   padding: 20px;
 }
 
-.eb{
+.eb {
   background-color: rgb(243, 192, 51);
 }
-.mb{
+.mb {
   background-color: rgb(206, 204, 204);
 }
-.wb{
+.wb {
   background-color: rgb(31, 31, 104);
 }
-.wob{
+.wob {
   background-color: rgb(28, 134, 28);
 }
 
-
-
-ul{
+ul {
   list-style-type: none;
 }
 
-.header-theory{
+.header-theory {
   margin: 20px 50px;
-color: rgb(65, 61, 51);
-
-
+  color: rgb(65, 61, 51);
 }
-.description-shiatsu{
+.description-shiatsu {
   color: rgb(95, 90, 74);
   width: 70%;
   margin: 0 50px;
 }
-.description-shiatsu-find{
+.description-shiatsu-find {
   color: rgb(56, 54, 45);
   width: 70%;
   margin: 0 50px;
   font-size: 1.2rem;
 }
 
-.larger-font{
+.larger-font {
   font-size: 2rem;
 }
-.cycle-descriptions{
+.cycle-descriptions {
   display: flex;
   flex-direction: row;
   color: rgb(95, 90, 74);
   justify-content: start;
   margin: 0 30px;
-  
 }
 
 .homebtn2 {
-  margin: 20px 50px ;
+  margin: 20px 50px;
   background-color: rgba(3, 44, 3, 0.486);
   border: none;
   width: fit-content;
-
-  
 }
 
-.homebtn2:hover{
+.homebtn2:hover {
   background-color: rgba(240, 248, 255, 0.301);
-
 }
 
-.home-link2:hover{
+.home-link2:hover {
   color: rgb(255, 255, 255);
 }
-.home-link2{
+.home-link2 {
   color: rgba(233, 229, 218, 0.836);
 }
 
@@ -376,9 +356,36 @@ display: flex;
 
 /* SelfEvaluation Page */
 
-
-.container-box{
+.container-box {
   display: flex;
-flex-direction: column;
-flex-grow: 100;
+  flex-direction: column;
+  flex-grow: 100;
+}
+
+.eval-title {
+  text-align: center;
+  color: rgba(61, 3, 3, 0.63);
+  width: 50%;
+  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
+  padding-bottom: 20px;
+  margin: 50px auto;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.form-select {
+  width: 300px;
+  margin: 20px;
+}
+
+.self-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
