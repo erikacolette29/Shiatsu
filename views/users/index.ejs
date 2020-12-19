@@ -2,7 +2,7 @@
 <div class="color-container">
 
 
-<div class="card mb-3">
+<div class="card2 card mb-3">
     <img src="<%= user.avatar %> " class=" avatar-profile card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title"><%= user.name %></h5>
@@ -20,7 +20,9 @@
   </div>
 
 
-<h2 class="update-text">Update Info</h2>
+  <h2 class="update-text">Update Profile</h2>
+<div class="update-box">
+
 <form action="/users/<%= user._id %>?_method=PUT" method="POST">
 <label class="form-label">Alias:</label>
 <input class="form-control" type="text" name="alias" value="<%= user.alias %>">
@@ -28,8 +30,21 @@
 <input  class="form-control" type="text" name="avatar" value="<%= user.avatar %>" >
 <label  class="form-label">Bio:</label>
 <textarea class="form-control" name="bio" cols="10" rows="3"><%= user.bio %></textarea>
-<button type="submit" class="btn btn-light">Update</button>
+<button type="submit" class="update-button btn btn-light">Update</button>
 </form>
+</div>
+
+<!-- friends list-->
+
+<div class="friends-box">
+<h3 class="update-text">Friends</h3>
+<% user.friends.forEach(f => { %>
+    <a href="/users/<%= f._id %>"><img width="30" id="avatarPhoto" src="<%= f.avatar %>" alt=""><%= f.name %> <%= f.alias ? `(${f.alias})` : '' %></a><br><br>
+    <% }) %>
+</div>
+
+
+
 
 
 <!-- self eval -->
@@ -56,7 +71,7 @@
                 
                 <form action="/users/<%= s._id %>?_method=DELETE"
                     class="delete-form" method="POST">
-                    <button class="btn btn-light" type="submit">🗑</button>
+                    <button class="delete btn btn-light" type="submit">🗑</button>
                   </form>
                 </td>
               
@@ -71,12 +86,6 @@
 
 
 
-
-<!-- friends list-->
-<h3>Friends:</h3>
-<% user.friends.forEach(f => { %>
-    <a href="/users/<%= f._id %>"><img width="30" id="avatarPhoto" src="<%= f.avatar %>" alt=""><%= f.name %> <%= f.alias ? `(${f.alias})` : '' %></a><br><br>
-    <% }) %>
 
 
 

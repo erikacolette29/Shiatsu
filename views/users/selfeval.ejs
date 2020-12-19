@@ -5,7 +5,7 @@
 <div class="form-box">
 
 <form action="/users/<%= user._id %>/neweval?_method=PUT" method="POST">
-      <select class="form-select form-select-lg mb-2" name="whatelementareyou">
+      <select class="form-select form-select-lg mb-2" name="whatelementareyou" required>
         <option selected >Which Element Are You?</option>
           <option value="Fire">Fire</option>
           <option value="Earth">Earth</option>
@@ -15,7 +15,7 @@
         </select>
     <br>
   
-      <select class="form-select form-select-sm" name="jitsuelement">
+      <select class="form-select form-select-sm" name="jitsuelement" required>
         <option selected>Jitsu Element (Too much of)</option>
         <option value="Fire">Fire</option>
         <option value="Earth">Earth</option>
@@ -25,7 +25,7 @@
         </select>
     <br> 
    
-      <select  class="form-select form-select-sm" name="kyoelement">
+      <select class="form-select form-select-sm" name="kyoelement" required>
         <option selected>Kyo Element (Too little of)</option>
         <option value="Fire">Fire</option>
         <option value="Earth">Earth</option>

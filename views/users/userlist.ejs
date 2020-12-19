@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
+<div class="color-container">
 
-
-<h3>Users List</h3>
+<h3 class="Mbheading">Users List</h3>
 
 
 
@@ -9,7 +9,7 @@
     <a href="/users/<%= u._id%>">
 <div class="card">
 <div class="card-body">
-<img src="<%= u.avatar ? u.avatar : 'https://www.stefanospizzaknoxville.com/wordpress/wp-content/uploads/diagonal-rainbow-stripes-01.png' %>" alt=""> <%= u.name %> </a>
+<img class="userpic" width="200" height="200" src="<%= u.avatar ? u.avatar : 'https://www.stefanospizzaknoxville.com/wordpress/wp-content/uploads/diagonal-rainbow-stripes-01.png' %>" alt=""> <%= u.name %> </a>
 
 </div>
 </div> <br>
@@ -23,7 +23,7 @@
 
 
 
-
+</div>
 
 
 
