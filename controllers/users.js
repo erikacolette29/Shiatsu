@@ -59,7 +59,7 @@ function deleteEval(req,res){
 console.log(req.user)
     User.findById(req.user._id)
     .then((user) =>{
-        let idx = user.selfevals.findIndex(selfeval => selfeval._id === req.params.selfevalId)
+        let idx = user.selfevals.findIndex(selfeval => selfeval._id == req.params.selfevalId)
        user.selfevals.splice(idx, 1)
        console.log(user)
         user.save()
