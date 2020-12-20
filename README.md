@@ -39,6 +39,10 @@ This app is designed to educate and inform people about the eastern massage prac
 * PASSPORT
 * MONGOOSE
 * MONGODB
+* VISUAL STUDIO CODE
+* EXPRESS
+* EJS
+* HEROKU
 
 ## Ice Box
 1. Make image of body clickable for meridians 
@@ -51,7 +55,7 @@ This app is designed to educate and inform people about the eastern massage prac
 
 Disclaimer: The background picture is not my own. All credit goes to the author from [istock](https://www.istockphoto.com/stock-photos). This photo was bought and paid for. 
 
-Error page - These videos are not my own and all credit goes to the authors of these videos. Videos are embedded from [youtube](https://www.youtube.com/)
+Error page - These videos are not my own and all credit goes to the authors of these videos. Videos are embedded from [YouTube](https://www.youtube.com/).
 - [kiwi](https://www.youtube.com/watch?v=sdUUx5FdySs)
 - [chess](https://www.youtube.com/watch?v=9IYRC7g2ICg&t=2s)
 - [rocks](https://www.youtube.com/watch?v=HOPwXNFU7oU&t=4s)
