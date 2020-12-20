@@ -49,9 +49,7 @@ This app is designed to educate and inform people about the eastern massage prac
 
 ### Attributions
 
-### Disclaimer: The background picture is not my own. All credit goes to the author from [istock](https://www.istockphoto.com/stock-photos). This photo was bought and paid for. 
-
-
+Disclaimer: The background picture is not my own. All credit goes to the author from [istock](https://www.istockphoto.com/stock-photos). This photo was bought and paid for. 
 
 Error page - These videos are not my own and all credit goes to the authors of these videos. Videos are embedded from [youtube](https://www.youtube.com/)
 - [kiwi](https://www.youtube.com/watch?v=sdUUx5FdySs)
