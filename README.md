@@ -46,7 +46,7 @@ This app is designed to educate and inform people about the eastern massage prac
 
 ## Ice Box
 1. Make image of body clickable for meridians 
-2. individualized treatment plan for User
+2. make all pages responsive
 3. Save Jitsu and kyo elements to calender 
 4. Add animation 
 
