@@ -9,6 +9,10 @@ This app is designed to educate and inform people about the eastern massage prac
 
 ![wireframe](public/stylesheets/images/shiatsuwireframe.png)
 ![ERD](public/stylesheets/images/erdshiatsu.png)
+![mainpic](public/stylesheets/images/mainpage.png)
+![elementpage](public/stylesheets/images/elementpage.png)
+![messagepage](public/stylesheets/images/mobilemessage.png)
+
 
 ## Setup
 
