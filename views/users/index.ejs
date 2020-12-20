@@ -1,7 +1,6 @@
 <%- include('../partials/header') %>
 <div class="color-container">
 
-
 <div class="card2 card mb-3">
     <img src="<%= user.avatar %> " class=" avatar-profile card-img-top" alt="...">
     <div class="card-body">
@@ -20,7 +19,7 @@
   </div>
 
 
-  <h2 class="update-text">Update Profile</h2>
+<h2 class="update-text">Update Profile</h2>
 <div class="update-box">
 
 <form action="/users/<%= user._id %>?_method=PUT" method="POST">
@@ -43,13 +42,7 @@
     <% }) %>
 </div>
 
-
-
-
-
 <!-- self eval -->
-
-
 
 <table class="table">
     <thead >
@@ -77,20 +70,9 @@
               
              
             </tr>
-      <%  })%>
+        <% }) %>
 
-    </div>
+</div>
    
-  
-
-
-
-
-
-
-
-
-
-
 
 <%- include('../partials/footer') %>

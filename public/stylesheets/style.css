@@ -196,9 +196,13 @@ margin: 50px auto;
 
 /* treatment page */
 .treatment-head {
-  border: 2px solid black;
   padding: 20px;
   text-align: center;
+}
+
+.treatment-box{
+  display: flex;
+  flex-direction: row;
 }
 
 .diagram {
@@ -210,10 +214,37 @@ margin: 50px auto;
 .diagram-size {
   width: 400px;
   margin: 50px;
+  animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
-.treat-text {
-  text-align: center;
+.treat-text{
+  margin-top: 100px;
+}
+.jitkyo-text{
+  color: rgba(59, 40, 18, 0.699);
+}
+
+.findtherapistH{
+  display: flex;
+  color: rgba(61, 3, 3, 0.63);
+  border-bottom: 2px rgba(3, 44, 3, 0.623) solid;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.amta-link{
+ display: flex;
+ justify-content: center;
+ margin: 50px;
 }
 
 
@@ -250,6 +281,7 @@ margin: 50px auto;
 .userpic{
   border-radius: 50%;
   margin-right: 15px;
+  
 }
 /* details page*/
 .show-container {

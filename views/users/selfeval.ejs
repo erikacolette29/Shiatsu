@@ -1,20 +1,23 @@
 <%- include('../partials/header') %>
 <div class="color-container">
-<h1 class="eval-title">Self Evaluation</h1>
+  <h1 class="eval-title">Self Evaluation</h1>
 
-<div class="form-box">
+  <div class="form-box">
+    <form action="/users/<%= user._id %>/neweval?_method=PUT" method="POST">
+      <select
+        class="form-select form-select-lg mb-2"
+        name="whatelementareyou"
+        required
+      >
+        <option selected>Which Element Are You?</option>
+        <option value="Fire">Fire</option>
+        <option value="Earth">Earth</option>
+        <option value="Metal">Metal</option>
+        <option value="Water">Water</option>
+        <option value="Wood">Wood</option>
+      </select>
+      <br />
 
-<form action="/users/<%= user._id %>/neweval?_method=PUT" method="POST">
-      <select class="form-select form-select-lg mb-2" name="whatelementareyou" required>
-        <option selected >Which Element Are You?</option>
-          <option value="Fire">Fire</option>
-          <option value="Earth">Earth</option>
-          <option value="Metal">Metal</option>
-          <option value="Water">Water</option>
-          <option value="Wood">Wood</option>
-        </select>
-    <br>
-  
       <select class="form-select form-select-sm" name="jitsuelement" required>
         <option selected>Jitsu Element (Too much of)</option>
         <option value="Fire">Fire</option>
@@ -22,9 +25,9 @@
         <option value="Metal">Metal</option>
         <option value="Water">Water</option>
         <option value="Wood">Wood</option>
-        </select>
-    <br> 
-   
+      </select>
+      <br />
+
       <select class="form-select form-select-sm" name="kyoelement" required>
         <option selected>Kyo Element (Too little of)</option>
         <option value="Fire">Fire</option>
@@ -32,16 +35,14 @@
         <option value="Metal">Metal</option>
         <option value="Water">Water</option>
         <option value="Wood">Wood</option>
-        </select>
-   <br> 
+      </select>
+      <br />
 
-  <button class="self-btn btn btn-outline-light" type="submit">Save Eval</button> 
-  </form>
-  
+      <button class="self-btn btn btn-outline-light" type="submit">
+        Save Eval
+      </button>
+    </form>
+  </div>
 </div>
-
-</div>
-  
-
 
 <%- include('../partials/footer') %>
