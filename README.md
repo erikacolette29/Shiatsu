@@ -15,6 +15,18 @@ This app is designed to educate and inform people about the eastern massage prac
 
 
 ## Setup
+- Installed express-generator & ejs /method-override/mongoose/setup Mongodb database / Google OAuth/ opened in Node.js
+- Made main user schema with a self evaluation schema embedded in it and user friends referenced. 
+- Next I made a separate message schema with a replies schema embedded in it. 
+- Setup all the routes in the server and connected them to the controller and models. 
+- When the user is logged into google, they are able to make a profile page, update it, fill out a self evaluation form, and save it to their page. 
+- The user can also view all the users and friend and remove friends. 
+- The user can post on the message board and reply to other peoples posts. User can only delete their own post. 
+- The user can go to a how to balance page, where they can find a link to the AMTA and get connected to a massage therapist. 
+- I wrote up my view pages and how they all connected through the flow of the user experience. 
+- I made the routes for those pages and handled the functionality for CRUD in the controller functions. 
+- I styled the page to have a very zen feel, to keep with the feel of Shiatsu. 
+  
 
 
 
